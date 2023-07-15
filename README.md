@@ -102,7 +102,7 @@ rails db:migrate:status
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Isues Pages](https://github.com/0sugo/blog-app/issues)
+Feel free to check the [Isues Pages](https://github.com/mercymugambi/blog-app/issues)
 
 <!-- SUPPORT -->
 
