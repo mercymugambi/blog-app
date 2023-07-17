@@ -9,4 +9,8 @@ class Comment < ApplicationRecord
   def comments_update
     post.increment!(:comments_counter)
   end
+
+  def recent_comments(limit = 5)
+    comments.order(created_at: :desc).limit(limit)
+  end
 end
