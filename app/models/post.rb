@@ -10,6 +10,9 @@ class Post < ApplicationRecord
   after_create :increment_user_posts_counter
   after_destroy :decrement_user_posts_counter
 
+  after_save :increment_user_posts_counter
+  after_save :decrement_user_posts_counter
+
   def increment_user_posts_counter
     user.increment!(:posts_counter)
   end
