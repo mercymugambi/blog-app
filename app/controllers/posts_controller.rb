@@ -1,8 +1,6 @@
-class UsersController <ApplicationController
-    # GET /posts or posts.json
-    def index
-    end
+class UsersController < ApplicationController
+  # GET /posts or posts.json
+  def index; end
 
-    def show
-    end
+  def show; end
 end
