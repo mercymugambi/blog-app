@@ -18,7 +18,7 @@
       <% @most_recent_posts.each do |post| %>
         <div class="recent-posts">
         <p><%= post.text %></p>
-        <p>comments: <%= post.comments_counter %>,
+        <p class="counters">comments: <%= post.comments_counter %>,
         Likes: <%= post.likes_counter %></p>
         </div>
       <% end %>

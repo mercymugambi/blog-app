@@ -15,7 +15,6 @@
 }
 
 .user-posts {
-    display: flex;
     margin-left: 50%;
 }
 
@@ -47,3 +46,6 @@ li {
     height: 80px;
 }
 
+.counters {
+    margin-left: 70%;
+}
