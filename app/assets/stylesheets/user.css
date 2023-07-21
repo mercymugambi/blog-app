@@ -1,0 +1,21 @@
+.user {
+    display: flex;
+    border: 2px solid pink;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.user-details {
+    border: 2px solid grey;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-posts {
+    display: flex;
+    margin-left: 70%;
+}
