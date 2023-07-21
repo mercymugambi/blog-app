@@ -1,4 +1,3 @@
-<!-- app/views/users/show.html.erb -->
 <div class="user">
   <div class="photo">
   <% if @user.photo.present? %>
@@ -22,7 +21,8 @@
         Likes: <%= post.likes_counter %></p>
         </div>
       <% end %>
+      <button id="show-more-btn">Show More</button>
   <% else %>
     <p>No recent posts.</p>
-<div>
-  <% end %>
+    <% end %>
+</div>

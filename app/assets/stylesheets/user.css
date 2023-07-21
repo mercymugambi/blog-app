@@ -24,6 +24,7 @@
     flex-direction: column;
     border: 2px solid pink;
     gap: 10px;
+    height: auto;
 }
 
 ul, li {
@@ -43,9 +44,14 @@ li {
 
 .recent-posts {
     border: 2px solid grey;
-    height: 80px;
+    height: auto;
 }
 
 .counters {
     margin-left: 70%;
+}
+
+#show-more-btn {
+    margin: auto;
+    width: 30%;
 }
