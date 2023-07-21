@@ -1,4 +1,5 @@
 <% @users.each do |user| %>
+<%= link_to user_path(user) do %>
   <div class="user">
     <div class="photo"><% if user.photo.present? %>
       <%= image_tag user.photo, size: "100x100" %>
@@ -11,4 +12,5 @@
     <p class="user-posts">Number of Posts: <%= user.posts.count %></p>
     </div>
   </div>
+  <% end %>
 <% end %>

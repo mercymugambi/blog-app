@@ -2,14 +2,13 @@
     display: flex;
     border: 2px solid pink;
     align-items: center;
+    width: 50%;
     gap: 10px;
-    width: 80%;
-    margin: auto;
 }
 
 .user-details {
     border: 2px solid grey;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,5 +16,34 @@
 
 .user-posts {
     display: flex;
-    margin-left: 70%;
+    margin-left: 50%;
 }
+
+.bio-posts {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border: 2px solid pink;
+    gap: 10px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border: 2px solid grey;
+}
+
+.p-bio {
+    border: 2px solid grey;
+    height: 40px;
+}
+
+.recent-posts {
+    border: 2px solid grey;
+    height: 80px;
+}
+
