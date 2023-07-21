@@ -1,6 +1,5 @@
 .user {
     display: flex;
-    border: 2px solid pink;
     align-items: center;
     width: 50%;
     gap: 10px;
@@ -22,7 +21,6 @@
     display: flex;
     width: 50%;
     flex-direction: column;
-    border: 2px solid pink;
     gap: 10px;
     height: auto;
 }
