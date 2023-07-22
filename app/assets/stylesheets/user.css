@@ -1,0 +1,56 @@
+.user {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.user-details {
+  border: 2px solid grey;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-posts {
+  margin-left: 50%;
+}
+
+.bio-posts {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 2px solid grey;
+}
+
+.p-bio {
+  border: 2px solid grey;
+  height: 40px;
+}
+
+.recent-posts {
+  border: 2px solid grey;
+  height: auto;
+}
+
+.counters {
+  margin-left: 70%;
+}
+
+#show-more-btn {
+  margin: auto;
+  width: 30%;
+}
