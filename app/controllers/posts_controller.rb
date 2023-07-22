@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_user, only: [:index, :show, :new, :create]
+  before_action :set_user, only: %i[index show new create]
   # GET /posts or posts.json
   def index
     @user = User.find(params[:user_id])
@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  def new 
+  def new
     @post = @user.posts.build
   end
 
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @post = @user.posts.build(post_params)
 
     if @post.save
-      redirect_to user_post_path(@user, @post), notice: "Post was successfully created."
+      redirect_to user_post_path(@user, @post), notice: 'Post was successfully created.'
     else
       puts @post.errors.full_messages
       render :new
