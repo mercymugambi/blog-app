@@ -1,36 +1,33 @@
 <div class="user">
-  <div class="photo">
-    <% if @user.photo.present? %>
-      <%= image_tag @user.photo, size: "100x100" %>
-    <% else %>
-      <%= image_tag "default-avatar.jpg", size: "100x100" %>
-    <% end %>
-  </div>
-  <div class="user-details">
-    <h3><%= @user.name %></h3>
-    <p class="user-posts">Number of Posts: <%= @user.posts.count %></p>
-  </div>
+  <!-- Your user details and posts display here -->
 </div>
 
 <div class="bio-posts">
   <% @all_posts.each do |post| %>
     <div class="recent-posts">
-    <%= link_to user_post_path(@user, post) do %>
-      <p><%= post.text %></p>
-      <p class="counters">comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
-    
-      <% if post.display_comments.any? %>
-        <h3 class="comments-heading">Comments:</h3>
-        <ul class="comments-list">
-          <% post.display_comments.each do |comment| %>
+      <%= link_to user_post_path(@user, post) do %>
+        <p><%= post.text %></p>
+        <p class="counters">comments: <%= post.comments_counter %>, <span> Likes: <%= post.likes_counter %> </span> </p>
+        <% if post.display_comments.any? %>
+          <h3 class="comments-heading">Comments:</h3>
+          <ul class="comments-list">
+            <% post.display_comments.each do |comment| %>
               <%= comment.user.name %> : <%= comment.text %> <br>
-          <% end %>
-        </ul>
+            <% end %>
+          </ul>
+        <% end %>
       <% end %>
+
+      <div class='like'>
+    <%= button_to 'Like Post', user_post_like_path(post.user, post), method: :post,class: "like" %>
+  </div>
+
+     <div class="create-comment-btn"> <%= link_to 'Create Comment', new_user_post_comment_path(@user, post) %> </div>
+
     </div>
-    <% end %>
   <% end %>
 </div>
+
 <button id="show-more-btn">
-<%= link_to 'Pagination'%>
+  <%= link_to 'Pagination' %>
 </button>

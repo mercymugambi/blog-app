@@ -1,6 +1,6 @@
 <div class="recent-posts">
   <p><%= @post.text %></p>
-  <p class="counters">comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+  <p class="counters">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes.count %></p>
 
   <% if @post.display_comments.any? %>
     <h3 class="comments-heading">Comments:</h3>
