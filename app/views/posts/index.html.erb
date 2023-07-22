@@ -7,7 +7,7 @@
     <div class="recent-posts">
       <%= link_to user_post_path(@user, post) do %>
         <p><%= post.text %></p>
-        <p class="counters">comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+        <p class="counters">comments: <%= post.comments_counter %>, <span> Likes: <%= post.likes_counter %> </span> </p>
         <% if post.display_comments.any? %>
           <h3 class="comments-heading">Comments:</h3>
           <ul class="comments-list">
@@ -17,6 +17,10 @@
           </ul>
         <% end %>
       <% end %>
+
+      <div class='like'>
+    <%= button_to 'Like Post', user_post_like_path(post.user, post), method: :post,class: "like" %>
+  </div>
 
      <div class="create-comment-btn"> <%= link_to 'Create Comment', new_user_post_comment_path(@user, post) %> </div>
 
