@@ -1,4 +1,4 @@
-<% @users.each do |user| %>
+<% @all_users.each do |user| %>
 <%= link_to user_path(user) do %>
   <div class="user">
     <div class="photo"><% if user.photo.present? %>
