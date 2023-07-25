@@ -1,34 +1,41 @@
 <div class="user">
   <div class="photo">
-  <% if @user.photo.present? %>
-  <%= image_tag @user.photo, size: "100x100" %>
-<% else %>
-  <%= image_tag "default-avatar.jpg", size: "100x100" %>
-<% end %>
+    <% if @user.photo.present? %>
+      <%= image_tag @user.photo, size: "100x100" %>
+    <% else %>
+      <%= image_tag "default-avatar.jpg", size: "100x100" %>
+    <% end %>
   </div>
   <div class="user-details">
     <h3><%= @user.name %></h3>
     <p class="user-posts">Number of Posts: <%= @user.posts.count %></p>
-    </div>
   </div>
-  <div class = "bio-posts">
-  <p class = "p-bio"><%= @user.bio %></p>
+</div>
+
+<div class="bio-posts">
+  <p class="p-bio"><%= @user.bio %></p>
   <% if @most_recent_posts.any? %>
-      <% @most_recent_posts.each do |post| %>
-        <div class="recent-posts">
-        <p><%= post.text %></p>
-        <p class="counters">comments: <%= post.comments_counter %>,
-        Likes: <%= post.likes_counter %></p>
-        </div>
-      <% end %>
+    <% @most_recent_posts.each do |post| %>
+      <div class="recent-posts">
+        <%= link_to user_post_path(@user, post) do %>
+          <p><%= post.text %></p>
+          <p class="counters">comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+        <% end %>
+      </div>
+    <% end %>
   <% else %>
     <p>No recent posts.</p>
-    <% end %>
+  <% end %>
 </div>
+
 <br>
-      <button id="create-post-btn">
-      <%= link_to 'Create Post', new_user_post_path(@user) %>
-      </button> <br> <br> <br>
-      <button id="show-more-btn">
-      <%= link_to 'Show More', user_posts_path(@user) %>
-      </button>
+
+<button id="create-post-btn">
+  <%= link_to 'Create Post', new_user_post_path(@user) %>
+</button>
+
+<br> <br> <br>
+
+<button id="show-more-btn">
+  <%= link_to 'Show More', user_posts_path(@user) %>
+</button>

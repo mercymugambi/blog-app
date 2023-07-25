@@ -80,3 +80,4 @@ group :development, :test do
   # Add any other testing gems you may need
 end
 
+gem 'will_paginate'
