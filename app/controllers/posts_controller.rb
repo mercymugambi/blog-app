@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @all_posts = @user.posts.includes(:user, comments: :user)
-    @posts = Post.includes(:user).all
+    @posts = Post.all
   end
 
   def show

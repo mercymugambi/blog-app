@@ -79,3 +79,4 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 5.0' # For writing concise and readable test assertions
   # Add any other testing gems you may need
 end
+
