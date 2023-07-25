@@ -1,6 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 require 'capybara/rspec'
+require 'webdrivers'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -36,8 +37,10 @@ RSpec.configure do |config|
   config.fixture_path = "#{Rails.root}/spec/fixtures"
 
   config.include Capybara::DSL, type: :feature
-  Capybara.default_driver = :selenium_chrome
-  Capybara.javascript_driver = :selenium_chrome 
+  Capybara.default_driver = :rack_test
+ 
+
+  # Webdrivers::Chromedriver.required_version = '115.0.5790.102'
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
