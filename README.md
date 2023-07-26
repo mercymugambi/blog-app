@@ -89,6 +89,12 @@ rails db:migrate:status
 - Twitter: [@MercyMugambi15](https://twitter.com/MercyMugambi15)
 - LinkedIn: [@mercymugambi](https://www.linkedin.com/in/mercymugambi)
 
+👤 **Drissa Toure**
+
+- GitHub: [@Mercy Mugambi](https://github.com/touredri)
+- Twitter: [@MercyMugambi15](https://twitter.com/touredri)
+- LinkedIn: [@mercymugambi](https://www.linkedin.com/in/touredri)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
