@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 require 'capybara/rspec'
 
 RSpec.describe Post, type: :feature do
