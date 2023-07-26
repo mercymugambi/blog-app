@@ -39,7 +39,6 @@ RSpec.configure do |config|
   config.include Capybara::DSL, type: :feature
   Capybara.default_driver = :rack_test
 
-
   # Webdrivers::Chromedriver.required_version = '115.0.5790.102'
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
