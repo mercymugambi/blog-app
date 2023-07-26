@@ -20,7 +20,7 @@ RSpec.feature 'User Show Page', type: :feature do
 
     expect(page).to have_selector("img[src$='https://unsplash.com/photos/F_-0BxGuVvo']")
     expect(page).to have_content(@user.name)
-    expect(page).to have_content("Number of Posts: 5")
+    expect(page).to have_content('Number of Posts: 5')
     expect(page).to have_content(@user.bio)
   end
 
@@ -37,7 +37,7 @@ RSpec.feature 'User Show Page', type: :feature do
   scenario "clicking 'Show More' displays all posts by the user" do
     visit user_path(@user)
 
-    click_link "Show More"
+    click_link 'Show More'
     expect(current_path).to eq(user_posts_path(@user))
     expect(page).to have_content(@post5.title)
     expect(page).to have_content(@post4.title)

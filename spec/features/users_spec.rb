@@ -19,11 +19,11 @@ RSpec.feature 'Users Index Page', type: :feature do
     visit users_path
 
     expect(page).to have_content(@user1.name)
-    expect(page).to have_content("Posts: 2")
+    expect(page).to have_content('Posts: 2')
     expect(page).to have_selector("img[src$='https://unsplash.com/photos/F_-0BxGuVvo']")
 
     expect(page).to have_content(@user2.name)
-    expect(page).to have_content("Posts: 3")
+    expect(page).to have_content('Posts: 3')
     expect(page).to have_selector("img[src$='https://unsplash.com/photos/F_-0BxGuVvo']")
   end
 
@@ -32,6 +32,5 @@ RSpec.feature 'Users Index Page', type: :feature do
 
     click_link @user1.name
     expect(current_path).to eq(user_path(@user1))
-
   end
 end
