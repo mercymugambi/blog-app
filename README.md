@@ -95,6 +95,12 @@ rails db:migrate:status
 - Twitter: [@Drissa](https://twitter.com/touredri)
 - LinkedIn: [@Drissa](https://www.linkedin.com/in/touredri)
 
+👤 *[Ndonyi]*
+
+- GitHub: [@githubhandle](https://github.com/citec-47)
+- Twitter: [@twitterhandle](https://twitter.com/Ndonyi4)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ndonyi-maurice-b5b49b22b/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
