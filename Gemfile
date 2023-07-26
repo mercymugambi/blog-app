@@ -69,8 +69,8 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'rails-controller-testing'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  # gem 'selenium-webdriver'
+  # gem 'webdrivers'
 end
 
 group :development, :test do
@@ -79,3 +79,5 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 5.0' # For writing concise and readable test assertions
   # Add any other testing gems you may need
 end
+
+gem 'will_paginate'

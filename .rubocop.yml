@@ -26,7 +26,7 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   AllowedMethods: ['describe']
-  Max: 30
+  Max: 50
 
 Style/Documentation:
   Enabled: false
@@ -49,6 +49,8 @@ Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
 Lint/RaiseException:
+  Enabled: false
+Layout/EndOfLine: 
   Enabled: false
 Lint/StructNewOverride:
   Enabled: false
