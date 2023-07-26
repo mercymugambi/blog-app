@@ -95,7 +95,7 @@ rails db:migrate:status
 - Twitter: [@Drissa](https://twitter.com/touredri)
 - LinkedIn: [@Drissa](https://www.linkedin.com/in/touredri)
 
-👤 *[Ndonyi]*
+👤 **Ndonyi**
 
 - GitHub: [@githubhandle](https://github.com/citec-47)
 - Twitter: [@twitterhandle](https://twitter.com/Ndonyi4)
