@@ -91,9 +91,9 @@ rails db:migrate:status
 
 👤 **Drissa Toure**
 
-- GitHub: [@Mercy Mugambi](https://github.com/touredri)
-- Twitter: [@MercyMugambi15](https://twitter.com/touredri)
-- LinkedIn: [@mercymugambi](https://www.linkedin.com/in/touredri)
+- GitHub: [@Drissa](https://github.com/touredri)
+- Twitter: [@Drissa](https://twitter.com/touredri)
+- LinkedIn: [@Drissa](https://www.linkedin.com/in/touredri)
 
 <!-- FUTURE FEATURES -->
 
