@@ -8,7 +8,6 @@ class PostsController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
-    @posts = @user.posts.paginate(page: params[:page], per_page: 5)
     @post = Post.find(params[:id])
   end
 
