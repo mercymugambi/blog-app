@@ -1,5 +1,7 @@
 require 'rails_helper'
+
 require 'capybara/rspec'
+
 RSpec.describe Post, type: :feature do
   user = User.create(name: 'Tom', posts_counter: 3, photo: 'https://pic.com',
                      bio: 'Project manager')
