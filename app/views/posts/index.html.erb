@@ -4,7 +4,7 @@
     <% if @user.photo.present? %>
       <%= image_tag @user.photo, size: "100x100" %>
     <% else %>
-      <%= image_tag "default-avatar.jpg", size: "100x100" %>
+    <%= image_tag "https://unsplash.com/photos/F_-0BxGuVvo", size: "100x100" %>
     <% end %>
   </div>
   <div class="user-details">
@@ -15,7 +15,7 @@
 
 <div class="bio-posts">
   <!-- Display all user posts here -->
-  <% @all_posts.each do |post| %>
+  <% @posts.each do |post| %>
     <div class="recent-posts">
       <%= link_to user_post_path(@user, post) do %>
         <p><%= post.text %></p>
@@ -41,7 +41,7 @@
   <% end %>
 </div>
 
-<!-- Add pagination link here -->
-<button id="show-more-btn">
-  <%= link_to 'Pagination', user_posts_path(@user) %>
-</button>
+<br> <br>
+<div class="pagination-links">
+  <%= will_paginate @posts %>
+</div>

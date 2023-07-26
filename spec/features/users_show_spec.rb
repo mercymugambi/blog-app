@@ -39,12 +39,10 @@ RSpec.feature 'User Show Page', type: :feature do
 
     click_link "Show More"
     expect(current_path).to eq(user_posts_path(@user))
-
     expect(page).to have_content(@post5.title)
     expect(page).to have_content(@post4.title)
     expect(page).to have_content(@post3.title)
     expect(page).to have_content(@post2.title)
     expect(page).to have_content(@post1.title)
-    
   end
 end

@@ -1,10 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_user, only: %i[index show new create]
-  # GET /posts or posts.json
+  
   def index
     @user = User.find(params[:user_id])
-    @all_posts = @user.posts.includes(:user, comments: :user)
-    @posts = Post.includes(:user).all
+    @posts = @user.posts.includes(:user, comments: :user).paginate(page: params[:page], per_page: 5)
   end
 
   def show
