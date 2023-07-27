@@ -81,3 +81,6 @@ group :development, :test do
 end
 
 gem 'will_paginate'
+
+gem 'devise'
+gem 'nokogiri', '~> 1.15', '>= 1.15.3'
