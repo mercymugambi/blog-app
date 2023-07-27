@@ -54,3 +54,45 @@ li {
   margin: auto;
   width: 30%;
 }
+
+/* sign-up page styles */
+.signup-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+.field {
+  width: 70%;
+}
+
+.input-field {
+  width: 100%;
+  margin: auto;
+}
+
+.actions {
+  width: 71%;
+  margin: auto;
+  padding-left: 1%;
+}
+
+.signup-button {
+  width: 100%;
+}
