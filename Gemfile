@@ -85,3 +85,5 @@ gem 'will_paginate'
 gem 'devise'
 gem 'letter_opener'
 gem 'nokogiri', '~> 1.15', '>= 1.15.3'
+
+gem 'cancancan', '~> 1.9'
